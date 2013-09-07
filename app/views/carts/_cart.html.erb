@@ -1,4 +1,4 @@
-<h2>Your Cart</h2>
+<h2>Votre Liste</h2>
 <table>
 	<%= render(cart.line_items) %>
 
@@ -8,5 +8,5 @@
 	</tr>
 </table>
 
-<%= button_to "Save cart", new_order_path, method: :get %>
-<%= button_to 'Empty cart', cart, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= button_to "Sauvegardez", new_order_path, method: :get %>
+<%= button_to 'Videz', cart, method: :delete, data: { confirm: 'Etes-vous certain?' } %>
