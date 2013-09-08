@@ -1,0 +1,9 @@
+fr:
+
+  layouts:
+    application:
+      title:       "Mon Epicerie"
+      home:        "Acceuil"
+      questions:   "Questions"
+      news:        "Nouvelles"
+      contact:     "Contactez-nous"
