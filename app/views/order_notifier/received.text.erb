@@ -1,0 +1,9 @@
+Cher(e) <%= @order.name %>
+
+Merci pour votre commande récente de Mon Epicerie.
+
+Vous avez commander les articles suivants:
+
+<%= render @order.line_items -%>
+	
+Vous recevrez un autre courriel au moment de l'expedition de votre commande.

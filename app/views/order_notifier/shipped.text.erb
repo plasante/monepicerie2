@@ -1,0 +1,9 @@
+<h3>Mon Epicerie Commande Expedie</h3>
+<p>
+  Ceci est une confirmation que nous avons recemment expedier votre commande:
+</p>
+
+<table>
+	<tr><th colspan="2">Qte</th><th>Description</th></tr>
+	<%= render @order.line_items -%>
+</table>
