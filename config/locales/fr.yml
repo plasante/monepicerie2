@@ -1,5 +1,57 @@
+#START:layout
+#START:main
+#START:cart
+#START:currency
+#START:checkout
+#START:errors
+#START:model
+#START:flash
 fr:
 
+#END:cart
+#END:flash
+#END:model
+#END:errors
+#END:checkout
+#END:main
+#END:layout
+  number:
+    currency:
+      format:
+        unit:      "$US"
+        precision: 2
+        separator: ","
+        delimiter: "."
+        format:    "%n&nbsp;%u"
+#END:currency
+
+#START:model
+#START:errors
+  activerecord:
+#END:errors
+    models:
+      order:       "Command"
+    attributes:
+      order:
+        address:   "Addresse postale"
+        name:      "Nom"
+        email:     "E-mail"
+        pay_type:  "Forme de paiement"
+#END:model
+#START:errors
+  errors:
+    messages:
+      inclusion: "n'est pas dans la liste"
+      blank:     "ne peut etre blanc"
+  errors:
+    template:
+      body:        "Il y a quelques problemes"
+      header:
+        one:       "1 erreur a empeche ce %{model} d'etre sauvegarder"
+        other:     "%{count} erreurs a empeche ce %{model} d'etre sauvegarder"
+#END:errors
+
+#START:layout
   layouts:
     application:
       title:       "Mon Epicerie"
@@ -7,3 +59,36 @@ fr:
       questions:   "Questions"
       news:        "Nouvelles"
       contact:     "Contactez-nous"
+#END:layout
+
+#START:cart
+  carts:
+    cart:
+      title:       "Votre panier"
+      empty:       "Videz votre panier"
+      checkout:    "Payez"
+#END:cart
+
+#START:main
+  store:
+    index:
+      title_html:  "Votre catalogue"
+      add_html:    "Videz votre panier"
+#END:main
+
+#START:checkout
+  orders:
+    new:
+      legend:       "Veuillez entrez vos infos"
+    form:
+      name:         "Nom"
+      address_html: "Addresse postale"
+      email:        "E-mail"
+      pay_type:     "Forme de paiement"
+      pay_prompt_html: "Selectionnez une methode de paiement"
+      submit:       "Soumettez votre paiement"
+#END:checkout
+
+#START:flash
+  thanks:          "Merci pour votre commande"
+#END:flash
