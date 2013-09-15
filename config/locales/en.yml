@@ -51,7 +51,7 @@ en:
 #START:main
   store:
     index:
-      title_html:  "Your Pragmatic Catalog"
+      title_html:  "Your Catalog"
       add_html:    "Add to Cart"
 #END:main
 
@@ -69,5 +69,6 @@ en:
 #END:checkout
 
 #START:flash
-  thanks:          "Thank you for your order"
+  thanks:             "Thank you for your order"
+  your_cart_is_empty: "Your cart is empty"
 #END:flash

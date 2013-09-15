@@ -26,7 +26,7 @@ class OrdersController < ApplicationController
   # GET /orders/new
   def new
     if @cart.line_items.empty?
-      redirect_to store_url, notice: "Your cart is empty"
+      redirect_to store_url, notice: I18n.t('.your_cart_is_empty')
       return
     end
 

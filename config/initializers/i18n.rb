@@ -2,7 +2,7 @@
 I18n.default_locale = :fr
 
 LANGUAGES = [
-  ["Fran&ccedil;ais".html_safe,          'fr'],
   ['English',                            'en'],
+  ["Fran&ccedil;ais".html_safe,          'fr'],
   ["Espa&ntilde;ol".html_safe,           'es']
 ]

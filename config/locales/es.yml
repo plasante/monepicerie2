@@ -72,7 +72,7 @@ es:
 #START:main
   store:
     index:
-      title_html:  "Su Cat&aacute;logo de Pragmatic"
+      title_html:  "Su Cat&aacute;logo"
       add_html:    "A&ntilde;adir al Carrito"
 #END:main
 
@@ -90,5 +90,6 @@ es:
 #END:checkout
 
 #START:flash
-  thanks:          "Gracias por su pedido"
+  thanks:             "Gracias por su pedido"
+  your_cart_is_empty: "Su carrito está vacío"
 #END:flash

@@ -90,5 +90,6 @@ fr:
 #END:checkout
 
 #START:flash
-  thanks:          "Merci pour votre commande"
+  thanks:             "Merci pour votre commande"
+  your_cart_is_empty: "Votre panier est vide"
 #END:flash
