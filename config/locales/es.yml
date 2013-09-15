@@ -54,7 +54,7 @@ es:
 #START:layout
   layouts:
     application:
-      title:       "Mis comestiblos"
+      title:       "Mi Grocery"
       home:        "Inicio"
       questions:   "Preguntas"
       news:        "Noticias"

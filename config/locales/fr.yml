@@ -18,7 +18,7 @@ fr:
   number:
     currency:
       format:
-        unit:      "$US"
+        unit:      "$CD"
         precision: 2
         separator: ","
         delimiter: "."
@@ -73,7 +73,7 @@ fr:
   store:
     index:
       title_html:  "Votre catalogue"
-      add_html:    "Videz votre panier"
+      add_html:    "Ajoutez &agrave; votre panier"
 #END:main
 
 #START:checkout
