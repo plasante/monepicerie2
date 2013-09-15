@@ -30,7 +30,7 @@ fr:
   activerecord:
 #END:errors
     models:
-      order:       "Command"
+      order:       "commande"
     attributes:
       order:
         address:   "Addresse postale"
@@ -39,16 +39,16 @@ fr:
         pay_type:  "Forme de paiement"
 #END:model
 #START:errors
-  errors:
-    messages:
-      inclusion: "n'est pas dans la liste"
-      blank:     "ne peut etre blanc"
+    errors:
+      messages:
+        inclusion: "n'est pas inclus dans la liste"
+        blank:     "ne peut pas être vide"
   errors:
     template:
-      body:        "Il y a quelques problemes"
+      body:        "Il ya des problèmes avec les champs suivants:"
       header:
-        one:       "1 erreur a empeche ce %{model} d'etre sauvegarder"
-        other:     "%{count} erreurs a empeche ce %{model} d'etre sauvegarder"
+        one:       "1 erreur a empêché cette %{model} d'etre sauvegard&eacute;"
+        other:     "%{count} erreurs ont  empêché cette %{model} d'etre sauvegard&eacute;"
 #END:errors
 
 #START:layout
@@ -64,7 +64,7 @@ fr:
 #START:cart
   carts:
     cart:
-      title:       "Votre panier"
+      title:       "Panier d'achats"
       empty:       "Videz votre panier"
       checkout:    "Payez"
 #END:cart
@@ -73,23 +73,23 @@ fr:
   store:
     index:
       title_html:  "Votre catalogue"
-      add_html:    "Ajoutez &agrave; votre panier"
+      add_html:    "Ajoutez au panier"
 #END:main
 
 #START:checkout
   orders:
     new:
-      legend:       "Veuillez entrez vos infos"
+      legend:       "Veuillez indiquez vos infos"
     form:
       name:         "Nom"
       address_html: "Addresse postale"
       email:        "E-mail"
       pay_type:     "Forme de paiement"
-      pay_prompt_html: "Selectionnez une methode de paiement"
-      submit:       "Soumettez votre paiement"
+      pay_prompt_html: "Selectionez une m&eacute;thode de paiement"
+      submit:       "Placez votre commande"
 #END:checkout
 
 #START:flash
-  thanks:             "Merci pour votre commande"
+  thanks:             "Merci pour votre achat"
   your_cart_is_empty: "Votre panier est vide"
 #END:flash
