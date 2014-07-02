@@ -10,30 +10,30 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 development:
   host: 127.0.0.1
-  adapter: mysql2
+  adapter: postgresql
   database: monepicerie2_development
   pool: 5
-  username: root
+  username: plasante
   password: 321eRRe!p
-  socket: /var/run/mysqld/mysqld.sock
+  #socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  host: 127.0.0.1
-  adapter: mysql2
+  #host: 127.0.0.1
+  adapter: postgresql
   database: monepicerie2_test
-  pool: 5
-  username: root
+  #pool: 5
+  username: plasante
   password: 321eRRe!p
-  socket: /var/run/mysqld/mysqld.sock
+  #socket: /var/run/mysqld/mysqld.sock
 
 production:
-  host: 127.0.0.1
-  adapter: mysql2
+  #host: 127.0.0.1
+  adapter: postgresql
   database: monepicerie2_production
-  pool: 5
-  username: root
+  #pool: 5
+  username: plasante
   password: 321eRRe!p
-  socket: /var/run/mysqld/mysqld.sock
+  #socket: /var/run/mysqld/mysqld.sock
